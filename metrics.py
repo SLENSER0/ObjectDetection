@@ -1,3 +1,4 @@
+
 def non_max_suppression(bboxes, iou_threshold, threshold):
   # bboxes = [x1,x2,y1,y2,confidence]
   selected_boxes = []
@@ -39,4 +40,5 @@ def intersection_over_union(predicted_bbox, gt_bbox) -> float:
     union_area = area_dt + area_gt - intersection_area
 
     iou = intersection_area / union_area
+
     return iou
